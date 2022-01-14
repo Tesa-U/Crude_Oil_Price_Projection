@@ -1,0 +1,26 @@
+Crude_Oil_Historical_Production_EIA
+-
+Date varchar pk
+U.S._Field_Production_of_Crude_Oil_(1k_Bar.) float
+
+Crude_Oil_Historical_Refinery_Utilization_EIA
+-
+Date varchar fk -< Crude_Oil_Historical_Production_EIA.Date
+Gross_Inputs_to_Refineries_(1k_Bar./Day) float  
+Operable_Crude_Oil_Distillation_Capacity_(1k_Bar./Calendar_Day) float
+Operating_Crude_Oil_Distillation_Capacity_(1k_Bar./Day) float
+Idle_Crude_Oil_Distillation_Capacity_(1k_Bar./Day) float
+Percent_Utilization_of_Refinery_Operable_Capacity float
+
+NYMEX_Crude_Oil_Historical_Futures_Prices
+-
+Date varchar fk -< Crude_Oil_Historical_Production_EIA.Date
+Cushing_OK_Crude_Oil_Future_Contract_1_($/Bar.) float 
+Cushing_OK_Crude_Oil_Future_Contract_2_($/Bar.) float 
+Cushing_OK_Crude_Oil_Future_Contract_3_($/Bar.) float 
+Cushing_OK_Crude_Oil_Future_Contract_4_($/Bar.) float 
+
+WTI_Crude_SPOT_Prices_Historical_EIA
+-
+Date varchar fk -< Crude_Oil_Historical_Production_EIA.Date
+Cushing_OK_WTI_Spot_Price_FOB_($/Bar.) float
