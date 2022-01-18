@@ -3,6 +3,22 @@
 GWU Data Analytics Boot Camp
 Group F
 
+## Resources
+- Software:
+   - Jupyter Notebook 6.4.6
+      - Python
+   - pgAdmin 4
+      - PostgreSQL
+   - [Quick DBD](https://www.quickdatabasediagrams.com/) 
+   
+- Data sources:
+   - [U.S. Energy Information Administration (EIA)](https://www.eia.gov/)
+      - [Crude Oil Production](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm)
+      - [Refinery Utilization and Capacity](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm)
+      - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_m.htm)
+   - [Investing.com](https://www.investing.com/)
+      - [Crude Oil WTI Futures Historical Data](https://www.investing.com/commodities/crude-oil-historical-data)
+
 ## Business Case
 
 Many industries, including shipping companies, oil producers, commodities traders, and banks rely heavily upon projections of oil prices to support their decision-making in today’s economy. However, with oil price volatility reaching all-time highs in the past ten years, and with the waning influence of OPEC on the world’s oil production, the task of generating consistent, accurate projections has become increasingly difficult. This has created a considerable opportunity for data scientists and machine learning engineers to apply their skillsets, as well as a demand for complex decision-support systems that firms can employ to navigate the unprecedented dynamics in today’s oil market.
