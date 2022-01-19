@@ -17,7 +17,7 @@ Group F
       - [Refinery Utilization and Capacity](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm)
       - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_m.htm)
    - [Investing.com](https://www.investing.com/)
-      - [Crude Oil WTI Futures Historical Data](https://www.investing.com/commodities/crude-oil-historical-data)
+      - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_m.htm)
 
 ## Business Case
 
