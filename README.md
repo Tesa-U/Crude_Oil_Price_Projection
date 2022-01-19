@@ -14,6 +14,7 @@ Group F
 - Data sources:
    - [U.S. Energy Information Administration (EIA)](https://www.eia.gov/)
       - [Crude Oil Production](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm)
+      - [Product Supplied](https://www.eia.gov/dnav/pet/pet_cons_psup_dc_nus_mbbl_m.htm)
       - [Refinery Utilization and Capacity](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm)
       - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_m.htm)
       - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_m.htm)
