@@ -3,6 +3,11 @@ Crude_Oil_Historical_Production_EIA
 Date varchar pk
 U.S._Field_Production_of_Crude_Oil_(1k_Bar.) float
 
+Historical_Crude_Petroleum_Product_Supplied
+-
+Date varchar fk -< Crude_Oil_Historical_Production_EIA.Date
+Product_Supplied_of_Crude_Oil_and_Petroleum_Products_(1k_Bar.) float
+
 Crude_Oil_Historical_Refinery_Utilization_EIA
 -
 Date varchar fk -< Crude_Oil_Historical_Production_EIA.Date
@@ -15,10 +20,7 @@ Percent_Utilization_of_Refinery_Operable_Capacity float
 NYMEX_Crude_Oil_Historical_Futures_Prices
 -
 Date varchar fk -< Crude_Oil_Historical_Production_EIA.Date
-Cushing_OK_Crude_Oil_Future_Contract_1_($/Bar.) float 
-Cushing_OK_Crude_Oil_Future_Contract_2_($/Bar.) float 
-Cushing_OK_Crude_Oil_Future_Contract_3_($/Bar.) float 
-Cushing_OK_Crude_Oil_Future_Contract_4_($/Bar.) float 
+Cushing_OK_Crude_Oil_Future_Contract_($/Bar.) float 
 
 WTI_Crude_SPOT_Prices_Historical_EIA
 -

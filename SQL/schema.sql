@@ -1,8 +1,15 @@
 -- Create the Crude Oil Historical Production EIA table
 CREATE TABLE Crude_Oil_Historical_Production (
 	"Date" VARCHAR(8) NOT NULL,
-	"U.S. Field Production of Crude Oil (1k Bar.)" FLOAT NOT NULL,
+	"Product Supplied of Crude Oil and Petroleum Products (1k Bar.)" FLOAT NOT NULL,
 	PRIMARY KEY ("Date")
+);
+
+-- Create the Historical Crude Petroleum Product Supplied table
+CREATE TABLE Historical_Crude_Petroleum_Product_Supplied (
+	"Date" VARCHAR(8) NOT NULL,
+	"U.S. Field Production of Crude Oil (1k Bar.)" FLOAT NOT NULL,
+	FOREIGN KEY ("Date") REFERENCES Crude_Oil_Historical_Production ("Date")
 );
 
 -- Create the Crude Oil Historical Refinery Utilization EIA table
@@ -20,9 +27,6 @@ CREATE TABLE Crude_Oil_Historical_Refinery_Utilization_EIA (
 CREATE TABLE NYMEX_Crude_Oil_Historical_Futures_Prices (
 	"Date" VARCHAR(8) NOT NULL,
     "Cushing, OK Crude Oil Future Contract 1 ($/Bar.)" FLOAT NOT NULL,
-    "Cushing, OK Crude Oil Future Contract 2 ($/Bar.)" FLOAT NOT NULL,
-    "Cushing, OK Crude Oil Future Contract 3 ($/Bar.)" FLOAT NOT NULL,
-    "Cushing, OK Crude Oil Future Contract 4 ($/Bar.)" FLOAT NOT NULL,
 	FOREIGN KEY ("Date") REFERENCES Crude_Oil_Historical_Production ("Date")
 );
 
