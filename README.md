@@ -21,7 +21,23 @@
       - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_m.htm)
       - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_m.htm)
 
+## Data Cleaning
+-
+-
+-
+-
+-
 
+
+## Database
+
+### Database Schema ERD
+
+![plot](./Images/ERDs_model.png)
+
+### Connection to the PostgreSQL Database
+
+![plot](./Images/Connection2SQL.png)
 
 ## Business Case
 
