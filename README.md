@@ -1,8 +1,7 @@
 # Crude Oil Price Projection
 ### GWU Data Analytics Boot Camp
 
-![plot](./Images/wti.jpeg) 
-
+![c1_2137798](https://user-images.githubusercontent.com/89308251/150701871-c67ba003-1369-4f42-bf74-2a42e02e0973.jpg)
 
 
 ## Resources
