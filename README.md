@@ -1,7 +1,8 @@
-# Crude_Oil_Price_Projection
+# Crude Oil Price Projection
+### GWU Data Analytics Boot Camp
 
-GWU Data Analytics Boot Camp
-Group F
+![c1_2137798](https://user-images.githubusercontent.com/89308251/150701871-c67ba003-1369-4f42-bf74-2a42e02e0973.jpg)
+
 
 ## Resources
 - Software:
@@ -18,6 +19,24 @@ Group F
       - [Refinery Utilization and Capacity](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm)
       - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_m.htm)
       - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_m.htm)
+
+## Data Cleaning
+-
+-
+-
+-
+-
+
+
+## Database
+
+### Database Schema ERD
+
+![plot](./Images/ERDs_model.png)
+
+### Connection to the PostgreSQL Database
+
+![plot](./Images/Connection2SQL.png)
 
 ## Business Case
 
