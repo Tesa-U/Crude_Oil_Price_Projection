@@ -41,13 +41,13 @@
    - Jupyter Notebook 6.4.6
       - Python (ETL process)
          - Pandas library
-      - [Quick DBD](https://www.quickdatabasediagrams.com/) (Create ERDs)
-      - PostgreSQL (Join/Merge datasets)
+   - [Quick DBD](https://www.quickdatabasediagrams.com/) (Create ERDs)
+   - PostgreSQL (Join/Merge datasets)
 
 - **Database Storage**
    - pgAdmin 4
       - PostgreSQL
-   - [Google Cloud Platform (GCP)](https://cloud.google.com/)
+   - [Google Cloud Platform](https://cloud.google.com/) (GCP)
 
 - **Machine Learning**
    - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
