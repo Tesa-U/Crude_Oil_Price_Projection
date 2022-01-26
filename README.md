@@ -1,42 +1,88 @@
 # Crude Oil Price Projection
 ### GWU Data Analytics Boot Camp
 
-![c1_2137798](https://user-images.githubusercontent.com/89308251/150701871-c67ba003-1369-4f42-bf74-2a42e02e0973.jpg)
+   ![plot](./Images/header_crudeoil.jpg)
 
 
 ## Resources
 - Software:
    - Jupyter Notebook 6.4.6
-      - Python
+      - Python 
    - pgAdmin 4
-      - PostgreSQL
+      - PostgreSQL 
    - [Quick DBD](https://www.quickdatabasediagrams.com/) 
+   - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
+   - Tableau Public 2021.3.3
+   - Visual Studio Code 1.63.2
+   - HTML/CSS
+   - GitHub Pages
    
 - Data sources:
    - [U.S. Energy Information Administration (EIA)](https://www.eia.gov/)
       - [Crude Oil Production](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm)
       - [Product Supplied](https://www.eia.gov/dnav/pet/pet_cons_psup_dc_nus_mbbl_m.htm)
       - [Refinery Utilization and Capacity](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm)
-      - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_m.htm)
-      - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_m.htm)
+      - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_d.htm)
+      - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm)
 
-## Data Cleaning
--
--
--
--
--
+## ETL Process (Extract, Transform, Load)
+### 1. Extract : 
+- There are 5 datasets stored as CSV files
+   - **Crude Oil Production**
+      - Area: U.S.
+      - Period-Unit: Monthly-Thousand Barrels
+      - Date: Jan-1920 to Oct-2021
+   - **Product Supplied**
+      - Area: U.S.
+      - Period-Unit: Monthly-Thousand Barrels
+      - Date: Jan-1936 to Oct-2021
+   - **Refinery Utilization and Capacity**
+      - Area: U.S.
+      - Period: Monthly
+      - Date: Jan-1985 to Oct-2021
+   - **NYMEX Futures Prices**
+      - Area: U.S.
+      - Period: Daily
+      - Date: Mar 30, 1983 to Jan 11, 2022
+   - **WTI Crude SPOT Prices Historical**
+      - Area: U.S.
+      - Period: Daily
+      - Date: 1/10/2022 to 1/2/1986
+
+### 2. Transform : 
+- Create a DataFrame with the columns that we want to keep or Drop unnecessary columns
+- Rename the columns by assigning a list of new column names
+- Drop the null values using `dropna()` method
+- Convert Data types on "Date" column using `to_datetime` method
+- Sort ascending order on "Date" column in the _WTI Crude SPOT Prices Historical_ DataFrame using `sort_values` method
+- Filter on "Date" column of all DataFrames between _(1986-01-01 & 2021-10-31)_
+- Calculate the average for each month and year in the _NYMEX Futures Prices_ and _the WTI Crude SPOT Prices Historical_ DataFrames
+- Round to specific decimals places 
+- Convert the "Date" column to datetime _(in abbreviated Month-Year or mmm-yyyy format)_ using `strftime("%b-%Y")` method
+- Join/Merge datasets using PostgreSQL
+ 
+   ![plot](./Images/Join_Datasets_SQL.png)
+
+### 3. Load :
+- Connect Pandas and SQL: using Pandas `to_sql` method paired with sqlAlchemy
+   ![plot](./Images/Connection2SQL.png)
 
 
-## Database
+## SQL Database
 
 ### Database Schema ERD
 
 ![plot](./Images/ERDs_model.png)
 
-### Connection to the PostgreSQL Database
+### Data Dictionary
 
-![plot](./Images/Connection2SQL.png)
+![plot](./Images/Data_Dictionary.png)
+
+### Definitions and Explanatory Notes
+
+![plot](./Images/Definitions_Notes.png)
+
+
 
 ## Business Case
 
