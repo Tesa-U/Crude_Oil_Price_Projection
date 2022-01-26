@@ -3,6 +3,38 @@
 
    ![plot](./Images/header_crudeoil.jpg)
 
+### Our Team:
+
+[Siyada Harker](https://github.com/SYDsCorner), 
+
+[Stephan Weir](https://github.com/SteveWeir),
+
+[Tsaschiker Ulziibadrakh](https://github.com/Tesa-U)
+
+
+### Roles:
+
+- **Data Source Research, Data Cleaning, and Database Storage**
+   - **Siyada** (Cleaning & Storage)
+   - **Stephan** (Data Source Research)
+
+- **Machine Learning**
+   - **Stephan**
+
+- **Dashboard**
+   - **Tesa** (Tableau)
+   - **Siyada** (HTML/CSS, GitHub Pages)
+
+- **GitHub Repository**
+   - **Tesa** 
+   - **Siyada**
+   - **Stephan**
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
+
 
 ### Software:
 - **Data Cleaning** 
@@ -32,6 +64,10 @@
 - **Slides**
    - Google Slides
    
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
+
 
 ### Resources:
 - Gathering data from [**U.S. Energy Information Administration (EIA)**](https://www.eia.gov/)
@@ -96,12 +132,12 @@
 - Calculate the average for each month and year in the _NYMEX Futures Prices_ and _the WTI Crude SPOT Prices Historical_ DataFrames
 - Round to specific decimals places 
 - Convert the "Date" column to datetime _(in abbreviated Month-Year or mmm-yyyy format)_ using `strftime("%b-%Y")` method
-- Join/Merge datasets using PostgreSQL
+- Join/Merge datasets using ***PostgreSQL***
     ![plot](./Images/Join_Datasets_SQL.png)
 
 
 ### 3. Load :
-- Connect Pandas and SQL: using Pandas `to_sql` method paired with sqlAlchemy
+- Connect Pandas and SQL: using Pandas `to_sql` method paired with ***sqlAlchemy***
    ![plot](./Images/Connection2SQL.png)
 
 
@@ -122,7 +158,14 @@
 
 ### Definitions and Explanatory Notes
 
+
 ![plot](./Images/Definitions_Notes.png)
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p>
+
 
 
 ## Machine Learning
@@ -140,6 +183,7 @@
 </p> 
 
 
+
 ## Dashboard
 
 - 
@@ -154,12 +198,19 @@
 </p> 
 
 
+
 ## Business Case
 
 Many industries, including shipping companies, oil producers, commodities traders, and banks rely heavily upon projections of oil prices to support their decision-making in today’s economy. However, with oil price volatility reaching all-time highs in the past ten years, and with the waning influence of OPEC on the world’s oil production, the task of generating consistent, accurate projections has become increasingly difficult. This has created a considerable opportunity for data scientists and machine learning engineers to apply their skillsets, as well as a demand for complex decision-support systems that firms can employ to navigate the unprecedented dynamics in today’s oil market.
+
+
+
 
 ## Project Proposal & Methods
 
 For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, and sales. 
 Initial parsing, cleaning and exploratory analysis of the data will be completed using Python’s Pandas library, with further analysis to be completed using Python. The data will be stored in a fully-integrated PostgresSQL database. Once the data is cleaned, stored, and split into training and testing sets, the model itself, developed using SciKit-Learn, will employ polynomial Support Vector Regression to generate a one-year projection of the weekly futures price of WTI Crude Oil. Visualizations of the model’s outputs and projections will be generated using Tableau, and the final presentation of this project will be displayed using Google Slides. 
 
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
