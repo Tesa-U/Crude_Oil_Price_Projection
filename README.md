@@ -4,26 +4,63 @@
    ![plot](./Images/header_crudeoil.jpg)
 
 
-## Resources
-- Software:
+### Software:
+- **Data Cleaning** 
    - Jupyter Notebook 6.4.6
-      - Python 
+      - Python (ETL process)
+         - Pandas library
+      - [Quick DBD](https://www.quickdatabasediagrams.com/) (Create ERDs)
+      - PostgreSQL (Join/Merge datasets)
+
+- **Database Storage**
    - pgAdmin 4
-      - PostgreSQL 
-   - [Quick DBD](https://www.quickdatabasediagrams.com/) 
+      - PostgreSQL
+   - [Google Cloud Platform (GCP)](https://cloud.google.com/)
+
+- **Machine Learning**
    - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
+      - Python
+         - Scikit-learn library
+            - Linear Regression algorithm
+
+- **Dashboard**
    - Tableau Public 2021.3.3
    - Visual Studio Code 1.63.2
-   - HTML/CSS
+      - HTML/CSS
    - GitHub Pages
    
-- Data sources:
-   - [U.S. Energy Information Administration (EIA)](https://www.eia.gov/)
-      - [Crude Oil Production](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm)
-      - [Product Supplied](https://www.eia.gov/dnav/pet/pet_cons_psup_dc_nus_mbbl_m.htm)
-      - [Refinery Utilization and Capacity](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm)
-      - [NYMEX Futures Prices](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_d.htm)
-      - [WTI Crude SPOT Prices Historical](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm)
+- **Slides**
+   - Google Slides
+   
+
+### Resources:
+- Gathering data from [**U.S. Energy Information Administration (EIA)**](https://www.eia.gov/)
+   - [**Crude Oil Production**](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm) dataset
+      > The volume of crude oil produced from oil reservoirs during given periods of time. The amount of such production for a given period is measured as volumes delivered from
+        lease storage tanks (i.e., the point of custody transfer) to pipelines, trucks, or other media for transport to refineries or terminals with adjustments for (1) net  
+        differences between opening and closing lease inventories, and (2) basic sediment and water (BS&W).
+     
+   - [**Product Supplied**](https://www.eia.gov/dnav/pet/pet_cons_psup_dc_nus_mbbl_m.htm) dataset
+      > Approximately represents consumption of petroleum products because it measures the disappearance of these products from primary sources, i.e., refineries, natural 
+        gas-processing plants, blending plants, pipelines, and bulk terminals. In general, Product Supplied of each product in any given period is computed as follows:
+        Product supplied = field production + refinery production + imports + unaccounted for crude oil (+ net receipts when calculated on a PAD District basis) - stock change -
+        crude oil losses - refinery inputs - exports
+
+   - [**Refinery Utilization and Capacity**](https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm) dataset
+      > Ratio of the total amount of crude oil, unfinished oils, and natural gas plant liquids run through crude oil distillation units to the operable capacity of these units.
+
+   - [**NYMEX Futures Prices**](https://www.eia.gov/dnav/pet/pet_pri_fut_s1_d.htm) dataset
+      > New York Mercantile Exchange, The price quoted for delivering a specified quantity of a commodity at a specified time and place in the future.
+
+   - [**WTI Crude SPOT Prices Historical**](https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm) dataset
+      > West Texas Intermediate, The price for a one-time open market transaction for immediate delivery of a specific quantity of product at a specific location where the
+        commodity is purchased "on the spot" at current market rates.
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
+
 
 ## ETL Process (Extract, Transform, Load)
 ### 1. Extract : 
@@ -60,12 +97,17 @@
 - Round to specific decimals places 
 - Convert the "Date" column to datetime _(in abbreviated Month-Year or mmm-yyyy format)_ using `strftime("%b-%Y")` method
 - Join/Merge datasets using PostgreSQL
- 
-   ![plot](./Images/Join_Datasets_SQL.png)
+    ![plot](./Images/Join_Datasets_SQL.png)
+
 
 ### 3. Load :
 - Connect Pandas and SQL: using Pandas `to_sql` method paired with sqlAlchemy
    ![plot](./Images/Connection2SQL.png)
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
 
 
 ## SQL Database
@@ -82,6 +124,34 @@
 
 ![plot](./Images/Definitions_Notes.png)
 
+
+## Machine Learning
+
+- 
+- 
+- 
+
+
+
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
+
+
+## Dashboard
+
+- 
+- 
+- 
+
+
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
 
 
 ## Business Case
