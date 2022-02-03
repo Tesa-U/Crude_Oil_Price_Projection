@@ -1,0 +1,79 @@
+/* Apply background-image and light text to the body */
+body {
+    background-image: url("../images/Red-Black-And-Gold.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f7f7f7;
+    position: relative;
+   }
+
+
+
+.content-div {
+    background-color:black;
+    color: #f7f7f7;
+    width: 1500px;
+    padding: 25px;
+    border: 5px solid rgb(3, 2, 0);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+  }
+
+
+
+/* Styling Links */
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(230, 179, 11);
+  text-decoration: underline
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+
+
+h2 {
+  color: #7b8020;
+  font-weight: 600;
+  padding: 20px 0;
+}
+
+
+h3 {
+  color: #ea9714;
+  font-weight: 600;
+  border-bottom: 1px solid #ea9714;
+  margin-left: 50px;
+}
+
+h4 {
+  color: #908e4a;
+  padding: 20px 0;
+  margin-left: 50px;
+}
+
+/* p, li {
+  color: white;
+  font-size: 1em;
+  line-height: 2em;
+  margin-left: 50px;
+} */
