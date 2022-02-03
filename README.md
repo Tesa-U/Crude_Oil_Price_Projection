@@ -20,6 +20,7 @@
 
 - **Machine Learning**
    - **Stephan**
+   - **Siyada** (Random Forest Regressor algorithm)
 
 - **Dashboard**
    - **Tesa** (Tableau)
@@ -54,6 +55,7 @@
       - Python
          - Scikit-learn library
             - Linear Regression algorithm
+            - Random Forest Regressor algorithm
 
 - **Dashboard**
    - Tableau Public 2021.3.3
