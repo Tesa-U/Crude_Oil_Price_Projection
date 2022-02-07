@@ -20,13 +20,17 @@
 
 - **Machine Learning**
    - **Stephan**
-   - **Siyada** (Random Forest Regressor algorithm)
+      - Linear Regression algorithm
+      - Prophet
+      - 
+   - **Siyada** 
+      - [Random Forest Regressor algorithm](https://github.com/SYDsCorner/Crude_Oil_Price_Projection/blob/Siyada_Harker/Machine%20Learning/Random_Forest.ipynb)
 
 - **Dashboard**
    - **Tesa** (Tableau)
    - **Siyada** (HTML/CSS, GitHub Pages)
 
-- **GitHub Repository**
+- **GitHub Repository & Slides**
    - **Tesa** 
    - **Siyada**
    - **Stephan**
@@ -177,7 +181,7 @@
 - 
 
 
-
+## 
 
 
 <p align="center">
@@ -188,9 +192,19 @@
 
 ## Dashboard
 
+> [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
+
+> [Link to GitHub Pages](https://sydscorner.github.io/Crude_Oil_Price_Projection/Templates/index.html)
+
 - 
 - 
 - 
+
+## Google Slides
+
+> [Link to Google Slides](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit#slide=id.p)
+
+![Slides](https://user-images.githubusercontent.com/89308251/152890911-985f359e-31c2-4e7f-a239-e3e70998521f.jpg)
 
 
 
