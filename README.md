@@ -75,6 +75,23 @@
 </p> 
 
 
+
+## Business Case
+
+Many industries, including shipping companies, oil producers, commodities traders, and banks rely heavily upon projections of oil prices to support their decision-making in today’s economy. However, with oil price volatility reaching all-time highs in the past ten years, and with the waning influence of OPEC on the world’s oil production, the task of generating consistent, accurate projections has become increasingly difficult. This has created a considerable opportunity for data scientists and machine learning engineers to apply their skillsets, as well as a demand for complex decision-support systems that firms can employ to navigate the unprecedented dynamics in today’s oil market.
+
+
+## Project Proposal 
+
+For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, and sales. 
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
+
+
+
 ### Resources:
 - Gathering data from [**U.S. Energy Information Administration (EIA)**](https://www.eia.gov/)
    - [**Crude Oil Production**](https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm) dataset
@@ -202,9 +219,9 @@
 
 ## Google Slides
 
-> [Link to Google Slides](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit#slide=id.p)
+> [Link to Google Slides](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit?usp=sharing)
 
-![Slides](https://user-images.githubusercontent.com/89308251/152890911-985f359e-31c2-4e7f-a239-e3e70998521f.jpg)
+[![Slides](https://user-images.githubusercontent.com/89308251/152890911-985f359e-31c2-4e7f-a239-e3e70998521f.jpg)](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit?usp=sharing)
 
 
 
@@ -214,19 +231,36 @@
 </p> 
 
 
+## Results
 
-## Business Case
+- 
+- 
 
-Many industries, including shipping companies, oil producers, commodities traders, and banks rely heavily upon projections of oil prices to support their decision-making in today’s economy. However, with oil price volatility reaching all-time highs in the past ten years, and with the waning influence of OPEC on the world’s oil production, the task of generating consistent, accurate projections has become increasingly difficult. This has created a considerable opportunity for data scientists and machine learning engineers to apply their skillsets, as well as a demand for complex decision-support systems that firms can employ to navigate the unprecedented dynamics in today’s oil market.
-
-
-
-
-## Project Proposal & Methods
-
-For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, and sales. 
-Initial parsing, cleaning and exploratory analysis of the data will be completed using Python’s Pandas library, with further analysis to be completed using Python. The data will be stored in a fully-integrated PostgresSQL database. Once the data is cleaned, stored, and split into training and testing sets, the model itself, developed using SciKit-Learn, will employ polynomial Support Vector Regression to generate a one-year projection of the monthly futures price of WTI Crude Oil. Visualizations of the model’s outputs and projections will be generated using Tableau, and the final presentation of this project will be displayed using Google Slides. 
 
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
 </p> 
+
+
+
+## Summary
+
+- 
+- 
+
+### Recommendation for future analysis
+
+- 
+- 
+
+### Anything the team would have done differently
+
+- 
+- 
+
+
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
+
+
