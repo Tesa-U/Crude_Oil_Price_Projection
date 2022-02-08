@@ -186,9 +186,15 @@
 
 ## Dashboard
 
-- 
-- 
-- 
+ ![plot](./dash_pics/home.png)
+ 
+ ![plot](./dash_pics/production.png)
+ 
+ ![plot](./dash_pics/product.png)
+ 
+ ![plot](./dash_pics/price.png)
+ 
+
 
 
 
