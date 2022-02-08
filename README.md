@@ -186,14 +186,17 @@
 
 ## Dashboard
 
-Our Tableau Dashboard contained four pages each dispayes detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
+- Our Tableau Dashboard has four pages where each dispays detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
 
+Here is the sneak peak of the Dashboard: 
 
  ![plot](./dash_pics/home.png)
  
  
  ![plot](./dash_pics/price.png)
  
+
+Here is the link to complete Dashboard: 
 
 
 
