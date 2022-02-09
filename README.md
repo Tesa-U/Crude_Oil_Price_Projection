@@ -216,25 +216,33 @@ Many industries, including shipping companies, oil producers, commodities trader
 ## Machine Learning
 
 ### Random Forest Regressor
-![Rd_fr](https://user-images.githubusercontent.com/85244439/153282064-9e20b3c3-5fe4-4933-a29e-696f9e5e97d6.jpg)![rf_visual](https://user-images.githubusercontent.com/85244439/153282071-5e8119f5-0b3b-476b-ac60-77f6275b44e5.jpg)![rf_rank](https://user-images.githubusercontent.com/85244439/153282115-b6b96b80-b3f3-4c63-8667-f75706762f56.jpg)
 
-![rf_rank](https://user-images.githubusercontent.com/85244439/153282065-1c5dbef5-d80c-4d96-be86-955e1fc27fbc.jpg)
+- **Rank the importance of features**
 
-![rf_visual](https://user-images.githubusercontent.com/85244439/153282108-74b66edd-2f71-4a8c-a1b4-9b5b48309d45.jpg)
+![rdf_rank](https://user-images.githubusercontent.com/89308251/153293441-b8e63c90-9f5f-4050-9f4b-5e58495e9bde.png)
+
+- **Accuracy**
+
+![random_forest_regressor_accuracy](https://user-images.githubusercontent.com/89308251/153293530-c3e44a51-b5e1-4576-8f50-d2d64c11ccf6.png)
+
+- **Random Forest Visualization**
+
+![random_forest_regressor](https://user-images.githubusercontent.com/89308251/153293619-a1a828cd-8579-4118-869e-91ba2a42f97e.png)
+
 
 ### ARIMA
-   -AutoRegressive Integrated Moving Average
-      -(AR) Regresses target variable on its own prior values. 
-         -lag parameter = p
-      -(I) Uses differences between observations and their prior values to attempt to make data stationary 
-         -differencing parameter = d
-      -(MA) Accounts for a moving average of lagged observations
+   - AutoRegressive Integrated Moving Average
+      - (AR) Regresses target variable on its own prior values. 
+         - lag parameter = p
+      - (I) Uses differences between observations and their prior values to attempt to make data stationary 
+         - differencing parameter = d
+      - (MA) Accounts for a moving average of lagged observations
          -Moving average window size = q
-   -Advantages: 
-      -Easy to use when analyzing and creating projections for time-series data
-   -Drawbacks:
-      -Potentially ineffective in analyzing data with a non-stationary mean (unit root)
-      -Extremely sensitive to large shocks
+   - Advantages: 
+      - Easy to use when analyzing and creating projections for time-series data
+   - Drawbacks:
+      - Potentially ineffective in analyzing data with a non-stationary mean (unit root)
+      - Extremely sensitive to large shocks
 
 #### ARIMA Model Structure
 
@@ -276,7 +284,6 @@ Many industries, including shipping companies, oil producers, commodities trader
 ![Results_originalValues](https://user-images.githubusercontent.com/85244439/153281729-94a7195c-fc9d-431b-8287-4e57140f9e5c.PNG)
 ![accuracy measure](https://user-images.githubusercontent.com/85244439/153281735-662fdf8c-2636-487a-a2e2-51460fd20d20.PNG)
 
-## 
 
 
 <p align="center">
@@ -296,15 +303,15 @@ Here is the sneak peak of the Dashboard:
 
 <img width="1152" alt="price copy" src="https://user-images.githubusercontent.com/89105793/153109415-0b1156ea-5f2c-47a1-a423-dd25293df4c5.png">
 
-Here is the link to complete Dashboard: 
 > [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
 
 
 ## GitHub Pages
 
+![GitHubPages_Crude_oil](https://user-images.githubusercontent.com/89308251/153293768-7a524a41-4250-4496-acdf-71d8e57352d5.png)
+
+
 > [Link to GitHub Pages](https://sydscorner.github.io/Crude_Oil_Price_Projection/Templates/index.html)
-
-
 
 
 ## Google Slides
@@ -321,7 +328,8 @@ Here is the link to complete Dashboard:
 
 ## Results
 
-![Results](https://user-images.githubusercontent.com/89308251/153275177-8e88446b-14fe-4496-a163-3e1527d4f227.png)
+
+![Results](https://user-images.githubusercontent.com/89308251/153293259-0c575983-9ae4-4ff5-9775-7a88ef82c608.png)
 
 
 
@@ -333,16 +341,16 @@ Here is the link to complete Dashboard:
 
 ## Summary
 
--In conclusion, our results indicate that Prophet yields the highest accuracy score for forecasting WTI Crude Oil futures, based on the MAPE scores. 
-- While further improvements can certainly be made to all of these models, Prophet offers an intuitive, user-friendly forecasting platform that boasts impressive accuracy,       given its simplicity. 
-- Random Forest Regressors, particularly when tuned to account for only the most important variables, also serve as a powerful forecasting tool when applied to WTI pricing.
-- ARIMA struggles to efficiently cope with the volatility of recent Crude pricing data, as seen in the forecast graph. While the ARIMA calculates a relatively acceptable MAPE,   the trend line does not cope well during periods of high price volatility.
-- LSTM models have high potential for accurate modeling of financial data, but it appears that the hyperparameters of the model would require extensive tuning in order to be     improved.
+- In conclusion, our results indicate that **Prophet** yields the ***highest accuracy score*** for forecasting WTI Crude Oil futures, based on the MAPE scores. 
+   - While further improvements can certainly be made to all of these models, Prophet offers an intuitive, user-friendly forecasting platform that boasts impressive accuracy,       given its simplicity. 
+- **Random Forest Regressors**, particularly when tuned to account for only the most important variables, also serve as a powerful forecasting tool when applied to WTI pricing.
+- **ARIMA** struggles to efficiently cope with the volatility of recent Crude pricing data, as seen in the forecast graph. While the ARIMA calculates a relatively acceptable MAPE, the trend line does not cope well during periods of high price volatility.
+- **LSTM** models have high potential for accurate modeling of financial data, but it appears that the hyperparameters of the model would require extensive tuning in order to be     improved.
    - Might also benefit from a larger dataset
 
 
 
-### Recommendation for future analysis
+### # Recommendation for future analysis
 
 - Use of weekly or daily data
    - Possible increase in model accuracy, at the cost of:
@@ -352,7 +360,7 @@ Here is the link to complete Dashboard:
    - Caution: in recent years, some of these correlations have shifted
 - Inclusion of global oil demand figures, not just product from domestic suppliers
 
-### Anything the team would have done differently
+### # Anything the team would have done differently
 
 #### For data:
 - There are several influences on oil prices

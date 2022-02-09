@@ -27,26 +27,26 @@ body {
 
 /* Styling Links */
 
-/* unvisited link */
-a:link {
-  color: red;
-}
+  /* unvisited link */
+  a:link {
+    color: rgb(250, 248, 248);
+  }
 
-/* visited link */
-a:visited {
-  color: white;
-}
+  /* visited link */
+  a:visited {
+    color: white;
+  }
 
-/* mouse over link */
-a:hover {
-  color: rgb(230, 179, 11);
-  text-decoration: underline
-}
+  /* mouse over link */
+  a:hover {
+    color: rgb(230, 179, 11);
+    text-decoration: underline
+  }
 
-/* selected link */
-a:active {
-  color: blue;
-}
+  /* selected link */
+  a:active {
+    color: blue;
+  }
 
 
 
@@ -67,13 +67,21 @@ h3 {
 
 h4 {
   color: #908e4a;
-  padding: 20px 0;
-  margin-left: 50px;
 }
 
-/* p, li {
-  color: white;
-  font-size: 1em;
-  line-height: 2em;
-  margin-left: 50px;
-} */
+p {
+  margin: 20px;
+}
+
+/* Fix problem: anchors scrolling too far, Credit: https://stackoverflow.com/a/24298427 */
+[id]::before {
+  content: '';
+  display: block;
+  height:      75px;
+  margin-top: -75px;
+  visibility: hidden;
+}
+
+
+
+
