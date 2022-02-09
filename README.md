@@ -10,7 +10,9 @@
 [Stephan Weir](https://github.com/SteveWeir),
 
 [Tsaschiker Ulziibadrakh](https://github.com/Tesa-U)
-<img width="576" alt="image" src="https://user-images.githubusercontent.com/89105793/153109518-43e42756-c2a6-4d00-8019-be9277ff7f1a.png">
+
+
+
 
 
 ### Roles:
