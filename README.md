@@ -78,7 +78,11 @@
 
 ## Project Proposal 
 
-For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, and sales. 
+For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, sales, and a variety of other indicators provided by the Energy Information Agency (EIA). We will test four different machine learning methods in order to determine the best fit for this task, shown below:
+-Random Forest Regression
+-ARIMA
+-Prophet
+LSTM RNN (Recurrent Neural Network)
 
 ## Business Case
 
@@ -211,12 +215,75 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ## Machine Learning
 
-- 
-- 
-- 
+### Random Forest Regressor
+
+- **Rank the importance of features**
+
+![rdf_rank](https://user-images.githubusercontent.com/89308251/153293441-b8e63c90-9f5f-4050-9f4b-5e58495e9bde.png)
+
+- **Accuracy**
+
+![random_forest_regressor_accuracy](https://user-images.githubusercontent.com/89308251/153293530-c3e44a51-b5e1-4576-8f50-d2d64c11ccf6.png)
+
+- **Random Forest Visualization**
+
+![random_forest_regressor](https://user-images.githubusercontent.com/89308251/153293619-a1a828cd-8579-4118-869e-91ba2a42f97e.png)
 
 
-## 
+### ARIMA
+   - AutoRegressive Integrated Moving Average
+      - (AR) Regresses target variable on its own prior values. 
+         - lag parameter = p
+      - (I) Uses differences between observations and their prior values to attempt to make data stationary 
+         - differencing parameter = d
+      - (MA) Accounts for a moving average of lagged observations
+         -Moving average window size = q
+   - Advantages: 
+      - Easy to use when analyzing and creating projections for time-series data
+   - Drawbacks:
+      - Potentially ineffective in analyzing data with a non-stationary mean (unit root)
+      - Extremely sensitive to large shocks
+
+#### ARIMA Model Structure
+
+#### ARIMA Model Output
+![ArimaOutput](https://user-images.githubusercontent.com/85244439/153279081-fa6c7a89-3069-4562-987c-bf8d542f1706.PNG)
+
+![metrics](https://user-images.githubusercontent.com/85244439/153279157-d26bbf63-82b2-40d6-8aa2-2752b6924688.PNG)
+
+### Long Short-Term Memory (LSTM)
+   - Recurrent Neural Network (RNN)
+      - Addresses the issue of ‘vanishing gradients’ in neural networks with its gate structure
+         -Multi-layer networks using certain activation functions experience gradient decay in the loss function, making them harder to train
+   - Drawbacks: 
+      - Longer model runtime
+      - Prone to overfitting, especially as depth is added to model 
+
+#### LSTM Cell Structure
+   - Forget Gate: Decides which prior inputs are pertinent to the model, and which should be ignored.
+   - Input Gate: Determines which relevant information can be added from the current step 
+   - Cell State: The path along which information is transported between gates.
+   - Output Gate: Determines the value of the next hidden state, based on information from input gate and the hidden state. 
+   - Activation Functions: Regulate data in the network, aid in determining if data should be updated or forgotten.
+![lstm structure](https://user-images.githubusercontent.com/85244439/153280136-9743aa04-a667-4a64-bf7a-59f7ced57b93.PNG)
+#### Multi-Layer LSTM Model
+![ModelStructure1](https://user-images.githubusercontent.com/85244439/153280246-e6933827-2e32-4b87-b096-240fca40e2c0.PNG)
+![ModelStructure2](https://user-images.githubusercontent.com/85244439/153280294-7410a1fa-eaaa-4aa7-90b0-52ee28831875.PNG)
+#### LSTM Output
+![Results](https://user-images.githubusercontent.com/85244439/153280322-2f61cc30-b42a-4cc7-b37b-dd88b317af9d.PNG)
+
+### Prophet
+   -Developed by Facebook/Meta
+      - Additive Regression Model 
+         - Includes seasonality component using a Fourier Series: expansion of a periodic function 
+            - Allows the model to more easily account for recurring trends in time series datasets
+   - Drawbacks: 
+      - Relatively ‘simplistic’ architecture, features limited when compared to other multivariate models
+![model build](https://user-images.githubusercontent.com/85244439/153281677-13213ef6-2a21-4c99-a6c5-675a38557e7d.PNG)
+![Results_logtransformed](https://user-images.githubusercontent.com/85244439/153281693-fac309f1-beaa-4ead-afbb-1c5097b3222f.PNG)
+![Results_originalValues](https://user-images.githubusercontent.com/85244439/153281729-94a7195c-fc9d-431b-8287-4e57140f9e5c.PNG)
+![accuracy measure](https://user-images.githubusercontent.com/85244439/153281735-662fdf8c-2636-487a-a2e2-51460fd20d20.PNG)
+
 
 
 <p align="center">
@@ -228,23 +295,23 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ## Dashboard
 
-- Our Tableau Dashboard has four pages where each dispays detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
+> Our Tableau Dashboard has four pages where each dispays detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
 
 Here is the sneak peak of the Dashboard: 
 
-<img width="1152" alt="home copy" src="https://user-images.githubusercontent.com/89105793/153109409-f72181cd-7010-4c18-8fa9-c8a7254a427c.png">
+![home](https://user-images.githubusercontent.com/89105793/153284525-9a79c36a-7582-4be5-80f3-95c070a53241.jpg)
 
 <img width="1152" alt="price copy" src="https://user-images.githubusercontent.com/89105793/153109415-0b1156ea-5f2c-47a1-a423-dd25293df4c5.png">
 
-Here is the link to complete Dashboard: 
 > [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
 
 
 ## GitHub Pages
 
+![GitHubPages_Crude_oil](https://user-images.githubusercontent.com/89308251/153293768-7a524a41-4250-4496-acdf-71d8e57352d5.png)
+
+
 > [Link to GitHub Pages](https://sydscorner.github.io/Crude_Oil_Price_Projection/Templates/index.html)
-
-
 
 
 ## Google Slides
@@ -261,7 +328,8 @@ Here is the link to complete Dashboard:
 
 ## Results
 
-![Results](https://user-images.githubusercontent.com/89308251/153275177-8e88446b-14fe-4496-a163-3e1527d4f227.png)
+
+![Results](https://user-images.githubusercontent.com/89308251/153293259-0c575983-9ae4-4ff5-9775-7a88ef82c608.png)
 
 
 
@@ -273,12 +341,16 @@ Here is the link to complete Dashboard:
 
 ## Summary
 
-In conclusion, our results indicate that **Prophet** yields the **highest accuracy score** for forecasting WTI Crude Oil futures, based on the MAPE scores. 
-While further improvements can certainly be made to all of these models, Prophet offers an intuitive, user-friendly forecasting platform that boasts impressive accuracy, given its simplicity. 
-**ARIMA** struggles to efficiently cope with the volatility of recent Crude pricing data, 
+- In conclusion, our results indicate that **Prophet** yields the ***highest accuracy score*** for forecasting WTI Crude Oil futures, based on the MAPE scores. 
+   - While further improvements can certainly be made to all of these models, Prophet offers an intuitive, user-friendly forecasting platform that boasts impressive accuracy,       given its simplicity. 
+- **Random Forest Regressors**, particularly when tuned to account for only the most important variables, also serve as a powerful forecasting tool when applied to WTI pricing.
+- **ARIMA** struggles to efficiently cope with the volatility of recent Crude pricing data, as seen in the forecast graph. While the ARIMA calculates a relatively acceptable MAPE, the trend line does not cope well during periods of high price volatility.
+- **LSTM** models have high potential for accurate modeling of financial data, but it appears that the hyperparameters of the model would require extensive tuning in order to be     improved.
+   - Might also benefit from a larger dataset
 
 
-### Recommendation for future analysis
+
+### # Recommendation for future analysis
 
 - Use of weekly or daily data
    - Possible increase in model accuracy, at the cost of:
@@ -288,7 +360,7 @@ While further improvements can certainly be made to all of these models, Prophet
    - Caution: in recent years, some of these correlations have shifted
 - Inclusion of global oil demand figures, not just product from domestic suppliers
 
-### Anything the team would have done differently
+### # Anything the team would have done differently
 
 #### For data:
 - There are several influences on oil prices
@@ -310,8 +382,8 @@ While further improvements can certainly be made to all of these models, Prophet
    - Would assist in the improvement of model accuracy
 
 #### For Dashboard:
-- 
-- 
+
+- Explore more datasets from various sources and include more categorical data for calculation and visualization.
 
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
