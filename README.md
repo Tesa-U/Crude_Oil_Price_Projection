@@ -273,7 +273,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 ![Results](https://user-images.githubusercontent.com/85244439/153280322-2f61cc30-b42a-4cc7-b37b-dd88b317af9d.PNG)
 
 ### Prophet
-   -Developed by Facebook/Meta
+   - Developed by Facebook/Meta
       - Additive Regression Model 
          - Includes seasonality component using a Fourier Series: expansion of a periodic function 
             - Allows the model to more easily account for recurring trends in time series datasets
