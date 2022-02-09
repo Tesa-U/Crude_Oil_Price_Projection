@@ -223,11 +223,7 @@ Here is the sneak peak of the Dashboard:
 Here is the link to complete Dashboard: 
 > [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
 
-> [Link to GitHub Pages](https://sydscorner.github.io/Crude_Oil_Price_Projection/Templates/index.html)
 
-- 
-- 
-- 
 
 ## Google Slides
 
