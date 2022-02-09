@@ -35,7 +35,7 @@
               <a href="./pandas_profiling_report.html" class="nav-link">Pandas Profiling Report</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Projection Methods</a>
+              <a href="./machine_lerning.html" class="nav-link">Projection Methods</a>
             </li>
             <li class="nav-item">
               <a href="./dashboard.html" class="nav-link">Dashboard</a>
@@ -91,59 +91,273 @@
         <!-- Spied element -->
         <div class="col-md-10">
           <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-            
-            <h1>Crude Oil Price Projection</h1><br><br>
+            <br><br>
 
             <h3 id="list-item-1">★ Topic & Purpose</h3>
 
-              <h4><p>✓ Selected topic</p></h4>
-                <p>...</p>   
+              <h4><p>✓ Topic: Crude Oil Price Projection</p></h4>
+                <p>Crude Oil Price Projection</p> 
 
-              <h4><p>✓ Reason why they selected their topic</p></h4>
-                <p>...</p> 
+              <h4><p>✓ Reason why we selected this topic</p></h4>
+                <p>For this project, we intend to develop a robust machine learning model that will deliver a one-year projection 
+                  for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends 
+                  of crude in the United States. To do so, we will be examining historical and current data from the Energy Information 
+                  Agency (EIA), a federal agency that tracks production, sales, and spot &amp; futures prices of WTI Crude. The price 
+                  projection will be a function of oil production, refinery utilization and capacity, and sales.
+                </p> 
 
 
             <h3 id="list-item-2">★ Questions</h3>
-              <h4><p>✓ Questions they hope to answer with the data</p></h4>
-                <p>...</p> 
-
-              <h4><p>✓ Description of the analysis phase of the project</p></h4>
-                <p>...</p> 
+              <h4><p>✓ Questions we hope to answer with the data</p></h4>
+              <ul>
+                <li><p>Where will the data be sourced from?</p></li>
+                <li><p>How will the data be data be transformed and stored?</p></li>
+                <li><p>Which machine learning models and libraries should be used?</p></li>
+                <li><p>How will the results be visualized?</p></li>
+                <li><p>Which model produces the most accurate projections for WTI?</p></li>
+              </ul>
 
 
             <h3 id="list-item-3">★ Data sources</h3>
               <h4><p>✓ Description of their source of data</p></h4>
-                <p>...</p> 
-
-              <h4><p>✓ Description of the data exploration phase of the project</p></h4>
-                <p>...</p>
+                <ul>
+                  <li>
+                    <p>Gathering data from 
+                      <a href="https://www.eia.gov/">
+                        <strong>U.S. Energy Information Administration (EIA)</strong>
+                      </a>
+                    </p>
+                    <ul>
+                      <li>
+                        <p>
+                          <a href="https://www.eia.gov/dnav/pet/pet_crd_crpdn_adc_mbbl_m.htm"><strong>Crude Oil Production</strong></a> 
+                          dataset
+                        </p>
+                        <blockquote>
+                        <p>The volume of crude oil produced from oil reservoirs during given periods of time. The amount of such production for a given period is measured as volumes delivered from
+                          lease storage tanks (i.e., the point of custody transfer) to pipelines, trucks, or other media for transport to refineries or terminals with adjustments for (1) net<br>   differences between opening and closing lease inventories, and (2) basic sediment and water (BS&amp;W).</p>
+                        </blockquote>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="https://www.eia.gov/dnav/pet/pet_cons_psup_dc_nus_mbbl_m.htm"><strong>Product Supplied</strong></a> 
+                          dataset
+                        </p>
+                        <blockquote>
+                        <p>Approximately represents consumption of petroleum products because it measures the disappearance of these products from primary sources, i.e., refineries, natural 
+                          gas-processing plants, blending plants, pipelines, and bulk terminals. In general, Product Supplied of each product in any given period is computed as follows:
+                          Product supplied = field production + refinery production + imports + unaccounted for crude oil (+ net receipts when calculated on a PAD District basis) - stock change -
+                          crude oil losses - refinery inputs - exports</p>
+                        </blockquote>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="https://www.eia.gov/dnav/pet/pet_pnp_unc_dcu_nus_m.htm">
+                            <strong>Refinery Utilization and Capacity</strong>
+                          </a> dataset
+                        </p>
+                        <blockquote>
+                          <p>Ratio of the total amount of crude oil, unfinished oils, and natural gas plant liquids run through crude oil distillation units to the operable capacity of these units.</p>
+                        </blockquote>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="https://www.eia.gov/dnav/pet/pet_pri_fut_s1_d.htm">
+                            <strong>NYMEX Futures Prices</strong>
+                          </a> dataset
+                        </p>
+                        <blockquote>
+                          <p>New York Mercantile Exchange, The price quoted for delivering a specified quantity of a commodity at a specified time and place in the future.</p>
+                        </blockquote>
+                      </li>
+                      <li>
+                        <p>
+                          <a href="https://www.eia.gov/dnav/pet/pet_pri_spt_s1_d.htm">
+                            <strong>WTI Crude SPOT Prices Historical</strong>
+                          </a> dataset
+                        </p>
+                        <blockquote>
+                          <p>West Texas Intermediate, The price for a one-time open market transaction for immediate delivery of a specific quantity of product at a specific location where the
+                            commodity is purchased &quot;on the spot&quot; at current market rates.</p>
+                        </blockquote>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>               
 
 
 
             <h3 id="list-item-4">★ Technologies we used</h3>
               <h4><p>✓ Technologies, languages, tools, and algorithms used throughout the project</p></h4>
-                <p>...</p> 
 
+                <ul>  
 
+                  <li>
+                    <p><strong>Data Cleaning</strong> </p>
+                    <ul>
+                      <li>Jupyter Notebook 6.4.6
+                        <ul>
+                          <li>Python (ETL process)
+                            <ul>
+                              <li>Pandas library</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://www.quickdatabasediagrams.com/">Quick DBD</a> (Create ERDs)
+                      </li>
+                      <li>PostgreSQL (Join/Merge datasets)</li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <p><strong>Database Storage</strong></p>
+                    <ul>
+                      <li>pgAdmin 4
+                        <ul>
+                          <li>PostgreSQL</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="https://cloud.google.com/">Google Cloud Platform</a> (GCP)
+                      </li>
+                    </ul>
+                  </li>
+                  
+                  <li>
+                    <p><strong>Machine Learning</strong></p>
+                    <ul>
+                      <li>Jupyter Notebook or <a href="https://colab.research.google.com/notebooks/welcome.ipynb">Google Colaboratory</a> (Google Colab Notebook)
+                        <ul>
+                          <li>Python
+                            <ul>
+                              <li>Scikit-learn library
+                                <ul>
+                                  <li>Prophet</li>
+                                  <li>LSTM (Keras/TensorFlow)</li>
+                                  <li>ARIMA</li>
+                                  <li>Random Forest Regressor algorithm</li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><p><strong>Dashboard</strong></p>
+                    <ul>
+                      <li>Tableau Public 2021.3.3</li>
+                      <li>Visual Studio Code 1.63.2
+                        <ul>
+                          <li>HTML/CSS</li>
+                        </ul>
+                      </li>
+                      <li>GitHub Pages</li>
+                    </ul>
+                  </li>
+
+                  <li><p><strong>Slides</strong></p>
+                    <ul>
+                      <li>Google Slides</li>
+                    </ul>
+                  </li>
+              </ul>
+                 
 
 
             <h3 id="list-item-5">★ Results</h3>
               <h4><p>✓ Result of analysis</p></h4>
-                <p>...</p> 
+              <p><img src="https://user-images.githubusercontent.com/89308251/153282159-b6d77392-61cb-4e0f-8730-46a01b4cade7.png" alt="Results_small"></p> 
           
 
 
             <h3 id="list-item-6">★ Summary</h3>
               <h4><p>✓ Summary</p></h4>
-                <p>...</p> 
-
+              <ul>
+                  <li>In conclusion, our results indicate that Prophet yields the highest accuracy score for forecasting WTI Crude Oil futures, based on the MAPE scores. </li>
+                  <li>While further improvements can certainly be made to all of these models, Prophet offers an intuitive, user-friendly forecasting platform that boasts impressive accuracy, given its simplicity. </li>
+                  <li>Random Forest Regressors, particularly when tuned to account for only the most important variables, also serve as a powerful forecasting tool when applied to WTI pricing.</li>
+                  <li>ARIMA struggles to efficiently cope with the volatility of recent Crude pricing data, as seen in the forecast graph. While the ARIMA calculates a relatively acceptable MAPE,   the trend line does not cope well during periods of high price volatility.</li>
+                  <li>LSTM models have high potential for accurate modeling of financial data, but it appears that the hyperparameters of the model would require extensive tuning in order to be improved.
+                    <ul>
+                      <li>Might also benefit from a larger dataset</li>
+                    </ul>
+                  </li>
+              </ul>
+              
 
                 <h4><p>✓ Recommendation for future analysis</p></h4>
-                <p>...</p> 
-              
+                <p>
+                  <ul>
+                    <li>Use of weekly or daily data
+                      <ul>
+                        <li>Possible increase in model accuracy, at the cost of:
+                          <ul>
+                            <li>Increased runtime</li>
+                            <li>Increased potential for model overfitting </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>Inclusion of pricing data for historically-correlated asset classes (USD, Gold, etc)
+                      <ul>
+                        <li>Caution: in recent years, some of these correlations have shifted</li>
+                      </ul>
+                    </li>
+                    <li>Inclusion of global oil demand figures, not just product from domestic suppliers</li>
+                  </ul> 
+                </p>
               
                 <h4><p>✓ Anything the team would have done differently</p></h4>
-                <p>...</p> 
+                <p>
+                  <h5 id="for-data-">For data:</h5>
+                    <ul>
+                      <li>There are several influences on oil prices
+                        <ul>
+                          <li>We could have explored additional data types, such as
+                            <ul>
+                              <li>Weather patterns</li>
+                              <li>Natural disasters</li>
+                              <li>Political Instability</li>
+                              <li>Military Conflicts</li>
+                              <li>Correlated financial instruments</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  <h5 id="for-machine-learning-">For Machine Learning:</h5>
+                    <ul>
+                      <li>Further exploration of different model types
+                        <ul>
+                          <li>VARMA (Vector AutoRegressive Moving Average with differencing)
+                            <ul>
+                              <li>Multivariate iteration of ARIMA</li>
+                            </ul>
+                          </li>
+                          <li>LSTM encoder-decoder Model (interprets data sequence-by-sequence)</li>
+                        </ul>
+                      </li>
+                        <li>Extrapolation of projections beyond the constraints of the time series
+                          <ul>
+                            <li>Considerable scarcity of publicly-available examples/recommendations of how this is accomplished, especially in the case of multivariate, multi-step models</li>
+                          </ul>
+                        </li>
+                      <li>Deeper understanding of hyperparameter tuning for more complex models
+                        <ul>
+                          <li>Would assist in the improvement of model accuracy</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  <h5 id="for-dashboard-">For Dashboard:</h5>
+                    <ul>
+                      <li>Explore more datasets from various sources and include more categorical data for calculation and visualization.</li>
+                    </ul>
+                </p> 
 
           </div>
         </div>
