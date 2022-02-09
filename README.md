@@ -217,32 +217,32 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ### Random Forest Regressor
 
-- Rank the importance of features
+- **Rank the importance of features**
 
 ![rdf_rank](https://user-images.githubusercontent.com/89308251/153293441-b8e63c90-9f5f-4050-9f4b-5e58495e9bde.png)
 
-- Accuracy
+- **Accuracy**
 
 ![random_forest_regressor_accuracy](https://user-images.githubusercontent.com/89308251/153293530-c3e44a51-b5e1-4576-8f50-d2d64c11ccf6.png)
 
-- Random Forest Visualization
+- **Random Forest Visualization**
 
 ![random_forest_regressor](https://user-images.githubusercontent.com/89308251/153293619-a1a828cd-8579-4118-869e-91ba2a42f97e.png)
 
 
 ### ARIMA
-   -AutoRegressive Integrated Moving Average
-      -(AR) Regresses target variable on its own prior values. 
-         -lag parameter = p
-      -(I) Uses differences between observations and their prior values to attempt to make data stationary 
-         -differencing parameter = d
-      -(MA) Accounts for a moving average of lagged observations
+   - AutoRegressive Integrated Moving Average
+      - (AR) Regresses target variable on its own prior values. 
+         - lag parameter = p
+      - (I) Uses differences between observations and their prior values to attempt to make data stationary 
+         - differencing parameter = d
+      - (MA) Accounts for a moving average of lagged observations
          -Moving average window size = q
-   -Advantages: 
-      -Easy to use when analyzing and creating projections for time-series data
-   -Drawbacks:
-      -Potentially ineffective in analyzing data with a non-stationary mean (unit root)
-      -Extremely sensitive to large shocks
+   - Advantages: 
+      - Easy to use when analyzing and creating projections for time-series data
+   - Drawbacks:
+      - Potentially ineffective in analyzing data with a non-stationary mean (unit root)
+      - Extremely sensitive to large shocks
 
 #### ARIMA Model Structure
 
@@ -303,7 +303,6 @@ Here is the sneak peak of the Dashboard:
 
 <img width="1152" alt="price copy" src="https://user-images.githubusercontent.com/89105793/153109415-0b1156ea-5f2c-47a1-a423-dd25293df4c5.png">
 
-Here is the link to complete Dashboard: 
 > [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
 
 
