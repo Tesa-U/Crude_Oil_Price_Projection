@@ -52,13 +52,15 @@
 - **Database Storage**
    - pgAdmin 4
       - PostgreSQL
-   - [Google Cloud Platform](https://cloud.google.com/) (GCP)
+   - [Google Cloud Platform](https://cloud.google.com/) (GCP): [Link Here](https://storage.googleapis.com/crude_oil_projection/Cleaned_Crude_Oil_Dataset.csv) 
 
 - **Machine Learning**
-   - [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
+   - Jupyter Notebook or [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
       - Python
          - Scikit-learn library
-            - Linear Regression algorithm
+            - Prophet
+            - LSTM (Keras/TensorFlow)
+            - ARIMA
             - Random Forest Regressor algorithm
 
 - **Dashboard**
@@ -259,8 +261,8 @@ Here is the link to complete Dashboard:
 
 ## Results
 
-- 
-- 
+![Results](https://user-images.githubusercontent.com/89308251/153275177-8e88446b-14fe-4496-a163-3e1527d4f227.png)
+
 
 
 <p align="center">
@@ -271,8 +273,10 @@ Here is the link to complete Dashboard:
 
 ## Summary
 
-- 
-- 
+In conclusion, our results indicate that **Prophet** yields the **highest accuracy score** for forecasting WTI Crude Oil futures, based on the MAPE scores. 
+While further improvements can certainly be made to all of these models, Prophet offers an intuitive, user-friendly forecasting platform that boasts impressive accuracy, given its simplicity. 
+**ARIMA** struggles to efficiently cope with the volatility of recent Crude pricing data, 
+
 
 ### Recommendation for future analysis
 
