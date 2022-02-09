@@ -226,7 +226,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ## Dashboard
 
-- Our Tableau Dashboard has four pages where each dispays detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
+> Our Tableau Dashboard has four pages where each dispays detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
 
 Here is the sneak peak of the Dashboard: 
 
