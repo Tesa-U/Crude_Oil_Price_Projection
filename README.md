@@ -52,7 +52,7 @@
 - **Database Storage**
    - pgAdmin 4
       - PostgreSQL
-   - [Google Cloud Platform](https://cloud.google.com/) (GCP): [Link Here](https://storage.googleapis.com/crude_oil_projection/Cleaned_Crude_Oil_Dataset.csv) 
+   - [Google Cloud Platform](https://cloud.google.com/) (GCP):  
 
 - **Machine Learning**
    - Jupyter Notebook or [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
@@ -206,6 +206,18 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ![plot](./Images/Definitions_Notes.png)
 
+### Database Storage
+
+- **In PostgreSQL**
+![storage_sql](https://user-images.githubusercontent.com/89308251/153302334-056d5db6-6a0e-47d1-90ac-2a3fe69c82a5.png)
+
+
+
+- **In Google Cloud Platform (GCP)** >> [Link Here](https://storage.googleapis.com/crude_oil_projection/Cleaned_Crude_Oil_Dataset.csv)
+
+![GCP](https://user-images.githubusercontent.com/89308251/153302360-220a6a6e-606f-4fb2-b5d5-3540cd0e75fa.png)
+
+
 
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
@@ -273,7 +285,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 ![Results](https://user-images.githubusercontent.com/85244439/153280322-2f61cc30-b42a-4cc7-b37b-dd88b317af9d.PNG)
 
 ### Prophet
-   -Developed by Facebook/Meta
+   - Developed by Facebook/Meta
       - Additive Regression Model 
          - Includes seasonality component using a Fourier Series: expansion of a periodic function 
             - Allows the model to more easily account for recurring trends in time series datasets
