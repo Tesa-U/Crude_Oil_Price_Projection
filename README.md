@@ -223,18 +223,18 @@ Many industries, including shipping companies, oil producers, commodities trader
 ![rf_visual](https://user-images.githubusercontent.com/85244439/153282108-74b66edd-2f71-4a8c-a1b4-9b5b48309d45.jpg)
 
 ### ARIMA
-   - AutoRegressive Integrated Moving Average
-      - (AR) Regresses target variable on its own prior values. 
-         - lag parameter = "p"
-      - (I) Uses differences between observations and their prior values to attempt to make data stationary 
-         - differencing parameter = "d"
-      - (MA) Accounts for a moving average of lagged observations
-         - Moving average window size = "q"
-   - Advantages: 
+   -AutoRegressive Integrated Moving Average
+      -(AR) Regresses target variable on its own prior values. 
+         -lag parameter = p
+      -(I) Uses differences between observations and their prior values to attempt to make data stationary 
+         -differencing parameter = d
+      -(MA) Accounts for a moving average of lagged observations
+         -Moving average window size = q
+   -Advantages: 
       -Easy to use when analyzing and creating projections for time-series data
-   - Drawbacks:
-      - Potentially ineffective in analyzing data with a non-stationary mean (unit root)
-      - Extremely sensitive to large shocks
+   -Drawbacks:
+      -Potentially ineffective in analyzing data with a non-stationary mean (unit root)
+      -Extremely sensitive to large shocks
 
 #### ARIMA Model Structure
 
@@ -374,8 +374,8 @@ Here is the link to complete Dashboard:
    - Would assist in the improvement of model accuracy
 
 #### For Dashboard:
-- 
-- 
+
+- Explore more datasets from various sources and include more categorical data for calculation and visualization.
 
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
