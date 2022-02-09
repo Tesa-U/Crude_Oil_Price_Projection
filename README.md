@@ -10,6 +10,7 @@
 [Stephan Weir](https://github.com/SteveWeir),
 
 [Tsaschiker Ulziibadrakh](https://github.com/Tesa-U)
+<img width="576" alt="image" src="https://user-images.githubusercontent.com/89105793/153109518-43e42756-c2a6-4d00-8019-be9277ff7f1a.png">
 
 
 ### Roles:
@@ -209,6 +210,15 @@ For this project, we intend to develop a robust machine learning model that will
 
 ## Dashboard
 
+- Our Tableau Dashboard has four pages where each dispays detailed visualization of WTI Crude Oil Field Production, Product Supplied of Crude Oil, Petrolium Products, and Future Price analysis.
+
+Here is the sneak peak of the Dashboard: 
+
+<img width="576" alt="home copy" src="https://user-images.githubusercontent.com/89105793/153109409-f72181cd-7010-4c18-8fa9-c8a7254a427c.png">
+
+<img width="576" alt="price copy" src="https://user-images.githubusercontent.com/89105793/153109415-0b1156ea-5f2c-47a1-a423-dd25293df4c5.png">
+
+Here is the link to complete Dashboard: 
 > [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
 
 > [Link to GitHub Pages](https://sydscorner.github.io/Crude_Oil_Price_Projection/Templates/index.html)
