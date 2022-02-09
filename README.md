@@ -12,9 +12,6 @@
 [Tsaschiker Ulziibadrakh](https://github.com/Tesa-U)
 
 
-
-
-
 ### Roles:
 
 - **Data Source Research, Data Cleaning, and Database Storage**
@@ -23,9 +20,9 @@
 
 - **Machine Learning**
    - **Stephan**
-      - Linear Regression algorithm
       - Prophet
-      - 
+      - LSTM (Keras/TensorFlow)
+      - ARIMA
    - **Siyada** 
       - [Random Forest Regressor algorithm](https://github.com/SYDsCorner/Crude_Oil_Price_Projection/blob/Siyada_Harker/Machine%20Learning/Random_Forest.ipynb)
 
@@ -77,22 +74,38 @@
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
 </p> 
 
+## Project Proposal 
 
+For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, and sales. 
 
 ## Business Case
 
 Many industries, including shipping companies, oil producers, commodities traders, and banks rely heavily upon projections of oil prices to support their decision-making in today’s economy. However, with oil price volatility reaching all-time highs in the past ten years, and with the waning influence of OPEC on the world’s oil production, the task of generating consistent, accurate projections has become increasingly difficult. This has created a considerable opportunity for data scientists and machine learning engineers to apply their skillsets, as well as a demand for complex decision-support systems that firms can employ to navigate the unprecedented dynamics in today’s oil market.
 
 
-## Project Proposal 
+<p align="center">
+  <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
+</p> 
 
-For this project, we intend to develop a robust machine learning model that will deliver a one-year projection for the price of West Texas Intermediate (WTI) Crude Oil, one of the most well-known and widely produced blends of crude in the United States. To do so, we will be examining historical and current data from the Energy Information Agency (EIA), a federal agency that tracks production, sales, and spot & futures prices of WTI Crude. The price projection will be a function of oil production, refinery utilization and capacity, and sales. 
+
+
+## Questions the team hopes to answer
+
+- Where will the data be sourced from?
+
+- How will the data be data be transformed and stored?
+
+- Which machine learning models and libraries should be used?
+
+- How will the results be visualized? 
+
+- Which model produces the most accurate projections for WTI?
+
 
 
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
 </p> 
-
 
 
 ### Resources:
@@ -225,14 +238,18 @@ Here is the link to complete Dashboard:
 > [Link to Tableau Dashboards](https://public.tableau.com/app/profile/tesa3667/viz/CrudeOilPricePrediction/HomeDashboard)
 
 
+## GitHub Pages
+
+> [Link to GitHub Pages](https://sydscorner.github.io/Crude_Oil_Price_Projection/Templates/index.html)
+
+
+
 
 ## Google Slides
 
+[![Slides](https://user-images.githubusercontent.com/89308251/153271619-7429a271-7ab1-4794-8dee-6e9e459fefa3.png)](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit?usp=sharing)
+
 > [Link to Google Slides](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit?usp=sharing)
-
-[![Slides](https://user-images.githubusercontent.com/89308251/152890911-985f359e-31c2-4e7f-a239-e3e70998521f.jpg)](https://docs.google.com/presentation/d/1lXZA4CR_A27Tfosn4hWl1wO1cqKca4x_WgnOeGEY38w/edit?usp=sharing)
-
-
 
 
 <p align="center">
@@ -259,14 +276,38 @@ Here is the link to complete Dashboard:
 
 ### Recommendation for future analysis
 
-- 
-- 
+- Use of weekly or daily data
+   - Possible increase in model accuracy, at the cost of:
+      - Increased runtime
+      - Increased potential for model overfitting 
+- Inclusion of pricing data for historically-correlated asset classes (USD, Gold, etc)
+   - Caution: in recent years, some of these correlations have shifted
+- Inclusion of global oil demand figures, not just product from domestic suppliers
 
 ### Anything the team would have done differently
 
-- 
-- 
+#### For data:
+- There are several influences on oil prices
+   - We could have explored additional data types, such as
+      - Weather patterns
+      - Natural disasters
+      - Political Instability
+      - Military Conflicts
+      - Correlated financial instruments
+      
+#### For Machine Learning:
+- Further exploration of different model types
+   - VARMA (Vector AutoRegressive Moving Average with differencing)
+      - Multivariate iteration of ARIMA
+   - LSTM encoder-decoder Model (interprets data sequence-by-sequence)
+- Extrapolation of projections beyond the constraints of the time series
+   - Considerable scarcity of publicly-available examples/recommendations of how this is accomplished, especially in the case of multivariate, multi-step models
+- Deeper understanding of hyperparameter tuning for more complex models
+   - Would assist in the improvement of model accuracy
 
+#### For Dashboard:
+- 
+- 
 
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
