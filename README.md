@@ -292,7 +292,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 Here is the sneak peak of the Dashboard: 
 
-<img width="1152" alt="home copy" src="https://user-images.githubusercontent.com/89105793/153109409-f72181cd-7010-4c18-8fa9-c8a7254a427c.png">
+![home](https://user-images.githubusercontent.com/89105793/153284525-9a79c36a-7582-4be5-80f3-95c070a53241.jpg)
 
 <img width="1152" alt="price copy" src="https://user-images.githubusercontent.com/89105793/153109415-0b1156ea-5f2c-47a1-a423-dd25293df4c5.png">
 
