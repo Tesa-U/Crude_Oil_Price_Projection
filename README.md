@@ -20,9 +20,9 @@
 
 - **Machine Learning**
    - **Stephan**
-      - Prophet
-      - LSTM (Keras/TensorFlow)
-      - ARIMA
+      - [Prophet](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/Prophet)
+      - [LSTM (Keras/TensorFlow)](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/TensorFlow_Keras)
+      - [ARIMA](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/ARIMA)
    - **Siyada** 
       - [Random Forest Regressor algorithm](https://github.com/SYDsCorner/Crude_Oil_Price_Projection/blob/Siyada_Harker/Machine%20Learning/Random_Forest.ipynb)
 
@@ -143,7 +143,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 </p> 
 
 
-## ETL Process (Extract, Transform, Load)
+## The ETL Process (Extract, Transform, Load)
 ### 1. Extract : 
 - There are 5 datasets stored as CSV files
    - **Crude Oil Production**
@@ -213,7 +213,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 
 
-- **In Google Cloud Platform (GCP)** >> [Link Here](https://storage.googleapis.com/crude_oil_projection/Cleaned_Crude_Oil_Dataset.csv)
+- **In Google Cloud Platform (GCP)** 
 
 ![GCP](https://user-images.githubusercontent.com/89308251/153302360-220a6a6e-606f-4fb2-b5d5-3540cd0e75fa.png)
 
@@ -227,7 +227,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ## Machine Learning
 
-### Random Forest Regressor
+<h3 align="center"> *** Random Forest Regressor *** </h3> 
 
 - **Rank the importance of features**
 
@@ -241,15 +241,16 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ![random_forest_regressor](https://user-images.githubusercontent.com/89308251/153293619-a1a828cd-8579-4118-869e-91ba2a42f97e.png)
 
+---------------------------------
 
-### ARIMA
+<h3 align="center"> *** ARIMA *** </h3> 
    - AutoRegressive Integrated Moving Average
       - (AR) Regresses target variable on its own prior values. 
          - lag parameter = p
       - (I) Uses differences between observations and their prior values to attempt to make data stationary 
          - differencing parameter = d
       - (MA) Accounts for a moving average of lagged observations
-         -Moving average window size = q
+         - Moving average window size = q
    - Advantages: 
       - Easy to use when analyzing and creating projections for time-series data
    - Drawbacks:
@@ -263,10 +264,13 @@ Many industries, including shipping companies, oil producers, commodities trader
 
 ![metrics](https://user-images.githubusercontent.com/85244439/153279157-d26bbf63-82b2-40d6-8aa2-2752b6924688.PNG)
 
-### Long Short-Term Memory (LSTM)
+---------------------------------
+
+<h3 align="center"> *** Long Short-Term Memory (LSTM) ***  </h3>
+
    - Recurrent Neural Network (RNN)
       - Addresses the issue of ‘vanishing gradients’ in neural networks with its gate structure
-         -Multi-layer networks using certain activation functions experience gradient decay in the loss function, making them harder to train
+         - Multi-layer networks using certain activation functions experience gradient decay in the loss function, making them harder to train
    - Drawbacks: 
       - Longer model runtime
       - Prone to overfitting, especially as depth is added to model 
@@ -278,13 +282,18 @@ Many industries, including shipping companies, oil producers, commodities trader
    - Output Gate: Determines the value of the next hidden state, based on information from input gate and the hidden state. 
    - Activation Functions: Regulate data in the network, aid in determining if data should be updated or forgotten.
 ![lstm structure](https://user-images.githubusercontent.com/85244439/153280136-9743aa04-a667-4a64-bf7a-59f7ced57b93.PNG)
+
 #### Multi-Layer LSTM Model
 ![ModelStructure1](https://user-images.githubusercontent.com/85244439/153280246-e6933827-2e32-4b87-b096-240fca40e2c0.PNG)
 ![ModelStructure2](https://user-images.githubusercontent.com/85244439/153280294-7410a1fa-eaaa-4aa7-90b0-52ee28831875.PNG)
+
 #### LSTM Output
 ![Results](https://user-images.githubusercontent.com/85244439/153280322-2f61cc30-b42a-4cc7-b37b-dd88b317af9d.PNG)
 
-### Prophet
+---------------------------------
+
+<h3 align="center"> *** Prophet ***  </h3>
+
    - Developed by Facebook/Meta
       - Additive Regression Model 
          - Includes seasonality component using a Fourier Series: expansion of a periodic function 
@@ -301,7 +310,6 @@ Many industries, including shipping companies, oil producers, commodities trader
 <p align="center">
   <img width="551" height="73" src="https://user-images.githubusercontent.com/89308251/151103065-7494f6de-fba9-48c0-869d-b976829a1860.png">
 </p> 
-
 
 
 
