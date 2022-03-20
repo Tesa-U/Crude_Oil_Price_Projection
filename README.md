@@ -244,13 +244,14 @@ Many industries, including shipping companies, oil producers, commodities trader
 ---------------------------------
 
 <h3 align="center"> *** ARIMA *** </h3> 
-   - AutoRegressive Integrated Moving Average
-      - (AR) Regresses target variable on its own prior values. 
-         - lag parameter = p
-      - (I) Uses differences between observations and their prior values to attempt to make data stationary 
-         - differencing parameter = d
-      - (MA) Accounts for a moving average of lagged observations
-         - Moving average window size = q
+
+- AutoRegressive Integrated Moving Average
+   - (AR) Regresses target variable on its own prior values. 
+      - lag parameter = p
+   - (I) Uses differences between observations and their prior values to attempt to make data stationary 
+      - differencing parameter = d
+   - (MA) Accounts for a moving average of lagged observations
+      - Moving average window size = q
    - Advantages: 
       - Easy to use when analyzing and creating projections for time-series data
    - Drawbacks:
@@ -260,6 +261,7 @@ Many industries, including shipping companies, oil producers, commodities trader
 #### ARIMA Model Structure
 
 #### ARIMA Model Output
+
 ![ArimaOutput](https://user-images.githubusercontent.com/85244439/153279081-fa6c7a89-3069-4562-987c-bf8d542f1706.PNG)
 
 ![metrics](https://user-images.githubusercontent.com/85244439/153279157-d26bbf63-82b2-40d6-8aa2-2752b6924688.PNG)
@@ -368,7 +370,7 @@ Here is the sneak peak of the Dashboard:
 - **LSTM** models have high potential for accurate modeling of financial data, but it appears that the hyperparameters of the model would require extensive tuning in order to be     improved.
    - Might also benefit from a larger dataset
 
-
+---------------------------------
 
 ### # Recommendation for future analysis
 
@@ -379,6 +381,8 @@ Here is the sneak peak of the Dashboard:
 - Inclusion of pricing data for historically-correlated asset classes (USD, Gold, etc)
    - Caution: in recent years, some of these correlations have shifted
 - Inclusion of global oil demand figures, not just product from domestic suppliers
+
+---------------------------------
 
 ### # Anything the team would have done differently
 
