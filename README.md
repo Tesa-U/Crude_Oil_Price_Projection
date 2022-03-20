@@ -22,10 +22,10 @@
 - **Machine Learning**
    - **Stephan**
       - [Prophet](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/Prophet)
-      - [LSTM (Keras/TensorFlow)](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/TensorFlow_Keras)
       - [ARIMA](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/ARIMA)
+      - [LSTM (Keras/TensorFlow)](https://github.com/Tesa-U/Crude_Oil_Price_Projection/tree/Stephan-Weir/TensorFlow_Keras)
    - **Siyada** 
-      - [Random Forest Regressor algorithm](https://github.com/SYDsCorner/Crude_Oil_Price_Projection/blob/Siyada_Harker/Machine%20Learning/Random_Forest.ipynb)
+      - [Random Forest Regressor](https://github.com/SYDsCorner/Crude_Oil_Price_Projection/blob/Siyada_Harker/Machine%20Learning/Random_Forest.ipynb)
 
 - **Dashboard**
    - **Tesa** (Tableau)
@@ -58,11 +58,10 @@
 - **Machine Learning**
    - Jupyter Notebook or [Google Colaboratory](https://colab.research.google.com/notebooks/welcome.ipynb) (Google Colab Notebook)
       - Python
-         - Scikit-learn library
-            - Prophet
-            - LSTM (Keras/TensorFlow)
-            - ARIMA
-            - Random Forest Regressor algorithm
+         - Prophet
+         - ARIMA
+         - LSTM (Keras/TensorFlow) 
+         - Random Forest Regressor 
 
 - **Dashboard**
    - Tableau Public 2021.3.3
@@ -107,7 +106,6 @@ Many industries, including shipping companies, oil producers, commodities trader
 - How will the results be visualized? 
 
 - Which model produces the most accurate projections for WTI?
-
 
 
 <p align="center">
